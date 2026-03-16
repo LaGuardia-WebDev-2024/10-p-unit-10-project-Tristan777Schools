@@ -9,9 +9,15 @@ setup = function() {
   textSize(30);
 
   while(crossiantX < 300){
-    text("🥐", crossiantX, 85);
+  
+  for (var i = 0; i < 300; i+=50) {
+   text('🥐', crossiantX, i);
+}
+    //text("🥐", crossiantX, 85);
     crossiantX += 40;
   }
+
+
 
   textSize(15);
   text(bakeryLabels[0], 70, 105);

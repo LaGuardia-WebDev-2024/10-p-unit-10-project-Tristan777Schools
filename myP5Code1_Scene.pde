@@ -1,27 +1,37 @@
-var bakeryLabels = ["Crossiants","Baguettes"];
+var storeLabels = ["Apples","Bananas", "Bread"];
 
 setup = function() {
 
   size(400, 400); 
   background(0,0,0,0);
 
-  var crossiantX = 60;
+  var appleX = 60;
   textSize(30);
 
-  while(crossiantX < 300){
+//apples
+  while(appleX < 300){
   
-  for (var i = 0; i < 300; i+=50) {
-   text('🥐', crossiantX, i);
+  for (var i = 0; i < 100; i+=20) {
+   text('🍎', appleX, i);
 }
-    //text("🥐", crossiantX, 85);
-    crossiantX += 40;
+    appleX+=50;
+  }
+
+  //banana
+  while(bananaX < 300){
+  
+  for (var i = 0; i < 100; i+=20) {
+   text('🍌', bananaX, i);
+}
+    bananaX+=50;
   }
 
 
-
+//
   textSize(15);
-  text(bakeryLabels[0], 70, 105);
-  text(bakeryLabels[1], 70, 185);
+  text(storeLabels[0], 70, 105);
+  text(storeLabels[1], 70, 185);
+  text(storeLabels[2], 70, 260);
 }
 
 draw = function(){   

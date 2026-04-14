@@ -4,6 +4,7 @@ setup = function() {
 
   size(400, 400); 
   background(0,0,0,0);
+}
 
 draw = function(){   
   
@@ -59,7 +60,4 @@ textSize(30);
 text("🧺", mouseX, mouseY);
 
   
-}
-
-
 }
